@@ -1,0 +1,189 @@
+@media (max-width: 1024px) {
+
+    /*===================================================benefits===================================================*/
+
+    .benefits__preview {
+        padding: 20px 20px 20px 20px;
+    }
+
+    /*===================================================benefits===================================================*/
+}
+
+@media (max-width: 1095px) {
+    /*===================================================header===================================================*/
+
+    .nav__container {
+        padding: 27px 25px;
+    }
+
+    .header__list-item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    /*===================================================header===================================================*/
+
+    /*===================================================services===================================================*/
+
+    .services__link {
+        font-size: 18px;
+    }
+
+    /*===================================================services===================================================*/
+
+}
+
+@media (max-width: 955px) {
+
+    /*===================================================header===================================================*/
+
+    
+    .nav__container {
+        justify-content: space-between;
+    }
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 1px solid currentColor;
+        border-radius: 10px; 
+        color: #cc9933;
+    }
+
+    .burger-line {
+        position: absolute;
+        width: 20px;
+        height: 2px;border-radius: inherit;
+        transform: translateX(-50%);
+        background-color: currentColor;
+    }
+
+    .burger-line:nth-child(1) {
+        top:12px;
+    }
+
+    .burger-line:nth-child(2) {
+        transform:translateX(-50%) translateY(-50%);
+    }
+
+    .burger-line:nth-child(3) {
+        bottom: 12px;
+    } 
+
+    .header__list {
+        display: none;
+    }
+
+    /*===================================================header===================================================*/
+
+    /*===================================================offer===================================================*/
+
+
+    .offer--left {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .offer--right {
+        width: 100%;
+    }
+
+    .offer__content--up {
+        border-radius: 23px;
+    }
+
+    .offer__content--down {
+        border-radius: 23px;
+    }
+
+    .offer--right {
+        border-radius: 23px;
+    }
+
+    .offer__content {
+        flex-direction: column;
+    }
+
+    .offer__descr--right {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .offer__price--right {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .offer__link--right {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    /*===================================================offer===================================================*/
+
+    /*===================================================info===================================================*/
+    
+    .info__descr {
+        margin: 16px 10px;
+        text-align: justify;
+    }
+
+    /*===================================================info===================================================*/
+
+    /*===================================================services===================================================*/
+
+    .services__list-item {
+        width: 100%;
+    }
+
+    .services__list-item:not(:nth-child(2n)) {
+        margin-right: 0px;
+    }
+    
+    .services__image1,
+    .services__image2,
+    .services__image3,
+    .services__image4  {
+        width: 100%;
+        border-radius: 23px 23px 0px 0px;
+    }
+
+    .services__list-card {
+        border-radius: 0px 0px 23px 23px;
+    }
+
+    /*===================================================services===================================================*/
+
+}
+
+@media (max-width: 850px) {
+
+    /*===================================================benefits===================================================*/
+
+    .benefits__preview {
+        padding: 10px 10px 10px 10px;
+    }
+
+    /*===================================================benefits===================================================*/
+}
+
+@media (max-width: 768px) {
+
+    /*===================================================benefits===================================================*/
+
+    .benefits__list-item {
+        width: calc((100% - 22px) / 2);
+    }
+
+    .benefits__list-item:not(:nth-child(4n)) {
+        margin-right: 0px;
+    }
+
+    .benefits__list-item:not(:nth-child(2n)) {
+        margin-right: 22px;
+    }
+
+    /*===================================================benefits===================================================*/
+
+}
+

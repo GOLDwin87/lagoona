@@ -47,12 +47,12 @@ img {
 }
 
 body {
-    min-width: 750px;
+    min-width: 720px;
     font-family: "Muller", sans-serif;
     background-color: #E5E5E5;
 }
 
-/*glob*/
+    /*===================================================glob===================================================*/
 .list-reset {
     margin: 0;
     padding: 0;
@@ -100,7 +100,13 @@ body {
     border-radius: 10px;
 }
 
-/*header*/
+    /*===================================================glob===================================================*/
+
+    /*===================================================header===================================================*/
+.burger {
+    display: none;
+}
+
 .header {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -172,7 +178,11 @@ body {
     margin-right: 45px;
 }
 
-/*offer*/
+    /*===================================================header===================================================*/
+
+
+    /*===================================================offer===================================================*/
+
 .offer--left {
     margin-right: 24px;
     flex-direction: column;
@@ -273,8 +283,10 @@ body {
     background-position: right center;
     background-repeat: no-repeat;
 }
+    /*===================================================offer===================================================*/
 
-/*info*/
+
+    /*===================================================info===================================================*/
 .info__descr {
     margin-right: 300px;
     font-weight: 400;
@@ -283,37 +295,39 @@ body {
     color: #000;
 }
 
-/*services*/
+    /*===================================================info===================================================*/
+
+    /*===================================================services===================================================*/
 .services__image1 {
     height: 165px;
-    width: 573px;
+    width: 100%;
     background-image: url("../imgs/champagne.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
 }
 
-.services-image2 {
+.services__image2 {
     height: 165px;
-    width: 573px;
+    width: 100%;
     background-image: url("../imgs/diner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
 }
 
-.services-image3 {
+.services__image3 {
     height: 165px;
-    width: 573px;
+    width: 100%;
     background-image: url("../imgs/swimming-pool.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
 }
 
-.services-image4 {
+.services__image4 {
     height: 165px;
-    width: 573px;
+    width: 100%;
     background-image: url("../imgs/cars.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -325,7 +339,7 @@ body {
 }
 
 .services__list-item {
-    width: 573px;
+    width: calc((100% - 24px) / 2);
     margin-bottom: 24px;
 }
 
@@ -360,13 +374,15 @@ body {
     color: #000;
 }
 
-/*benefits*/
+    /*===================================================services===================================================*/
+
+    /*===================================================benefits===================================================*/
 .benefits__list {
     flex-wrap: wrap;
 }
 
 .benefits__list-item {
-    width: 276px;
+    width: calc((100% - 66px) / 4);
     margin-bottom: 22px;
     background-color: #fff;
     border-radius: 15px;
@@ -395,7 +411,7 @@ body {
     color: #000;
 }
 
-/*accommodation*/
+/*===================================================accommodation===================================================*/
 .accommodation__list {
     flex-wrap: wrap;
 }
@@ -563,7 +579,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/*tours*/
+/*===================================================tours===================================================*/
 .tours__content {
     background-color: #d8d4d4;
     border-radius: 15px;
@@ -607,7 +623,7 @@ body {
     padding: 13px 30px;
 }
 
-/*contacts*/
+/*===================================================contacts===================================================*/
 .contacts__content {
     padding: 45px;
     background-color: #fff;
@@ -691,7 +707,7 @@ body {
     border-radius: 10px;
 }
 
-/*footer*/
+/*===================================================footer===================================================*/
 .footer-container {
     border-radius: 15px;
     background-color: #333333;
