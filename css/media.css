@@ -1,4 +1,11 @@
 @media (max-width: 1024px) {
+    /*===================================================header===================================================*/
+
+    .header__btn:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    /*===================================================header===================================================*/
 
     /*===================================================benefits===================================================*/
 
@@ -43,8 +50,8 @@
     .burger {
         display: block;
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         border: 1px solid currentColor;
         border-radius: 10px; 
         color: #cc9933;
@@ -52,7 +59,7 @@
 
     .burger-line {
         position: absolute;
-        width: 20px;
+        width: 25px;
         height: 2px;border-radius: inherit;
         transform: translateX(-50%);
         background-color: currentColor;
@@ -185,5 +192,26 @@
 
     /*===================================================benefits===================================================*/
 
+}
+
+@media (max-width: 670px) {
+    .header__contact {
+        display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    .header__account-btn {
+        display: block;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: none;
+        /* background: url("../imgs/avatar_account.svg") center no-repeat #cc9933; */
+    }
+
+    .header__account-link {
+        display:none;
+    }
 }
 
