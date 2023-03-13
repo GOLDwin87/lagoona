@@ -103,7 +103,8 @@ body {
     /*===================================================glob===================================================*/
 
     /*===================================================header===================================================*/
-.burger {
+.header__burger,
+.nav__burger {
     display: none;
 }
 
@@ -179,7 +180,7 @@ body {
     margin-right: 45px;
 }
 
-.header__btn:not(:last-child) {
+.header__btn--first {
     margin-right: 45px;
 }
 
@@ -191,13 +192,13 @@ body {
 .offer--left {
     margin-right: 24px;
     flex-direction: column;
-    width: 573px;
+    width: calc((100% - 24px) / 2);
 }
 
 .offer--right {
     flex-direction: column;
     justify-content: flex-end;
-    width: 573px;
+    width: calc((100% - 24px) / 2);
     background-image: url("../imgs/offer-back3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,7 +294,7 @@ body {
 
     /*===================================================info===================================================*/
 .info__descr {
-    margin-right: 300px;
+    margin-right: 25%;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
@@ -372,7 +373,6 @@ body {
 }
 
 .services__descr {
-    width: 402px;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
@@ -584,7 +584,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.accomodation--mobile {
+    display: none;
+}
+
+/*===================================================accommodation===================================================*/
+
 /*===================================================tours===================================================*/
+.tours {
+    display:  none;
+}
+
 .tours__content {
     background-color: #d8d4d4;
     border-radius: 15px;
@@ -711,6 +721,8 @@ body {
     background-repeat: no-repeat;
     border-radius: 10px;
 }
+
+/*===================================================contacts===================================================*/
 
 /*===================================================footer===================================================*/
 .footer-container {
