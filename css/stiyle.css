@@ -100,6 +100,21 @@ body {
     border-radius: 10px;
 }
 
+.btn:hover {
+   background-color: #cc9933;
+   color: #fff;
+}
+
+.btn:active {
+    background-color: #A47312;
+    border: 1px solid #A47312;
+    color: #fff;
+}
+
+.closer{
+    position: fixed;
+}
+
     /*===================================================glob===================================================*/
 
     /*===================================================header===================================================*/
@@ -182,6 +197,58 @@ body {
 
 .header__btn--first {
     margin-right: 45px;
+}
+
+.nav__mobile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s ease 0s;
+}
+
+.nav__mobile:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__mobile:target .header__list--mobile {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.header__list--mobile {
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 30%;
+    height: 40vh;
+    background-color: rgba(204, 153, 51, 0.9);
+    border-radius: 20px 0 0 20px;
+    padding: 50px 15px;
+    transform: translate(0, -50);
+    opacity: 0;
+}
+
+.list__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.list__item--mobile {
+    margin-bottom: 30px;
+}
+
+.header__link--mobile {
+    font-size: 2.5vh;
+    color: #333;
 }
 
     /*===================================================header===================================================*/
@@ -591,14 +658,46 @@ body {
 /*===================================================accommodation===================================================*/
 
 /*===================================================tours===================================================*/
+
+.close-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
 .tours {
-    display:  none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s ease 0s;
+}
+
+.tours:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tours:target .tours__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .tours__content {
-    background-color: #d8d4d4;
+    position: relative;
+    background-color: #cc9933;
     border-radius: 15px;
     padding: 45px;
+    transform: translate(0px, -200px);
+    opacity: 0;
+    transition: all 0.7s ease 0s;
 }
 
 .tours__form {
@@ -637,6 +736,16 @@ body {
     max-height: 42px;
     padding: 13px 30px;
 }
+
+.tours__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 50px;
+    color: #333;
+}
+
+/*===================================================tours===================================================*/
 
 /*===================================================contacts===================================================*/
 .contacts__content {
@@ -744,8 +853,6 @@ body {
 
 .footer__line2 {
     width: 50%;
-    /* background: url("../imgs/sun.svg") no-repeat;
-    background-position: bottom -50px right ; */
 }
 
 .footer__line3 {
@@ -831,3 +938,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/*===================================================footer===================================================*/
+
